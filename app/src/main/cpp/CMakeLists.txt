@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(usbaudio)
+set(CMAKE_CXX_STANDARD 17)
+add_library(usbaudio SHARED usbaudio.cpp)
+target_link_libraries(usbaudio log)
